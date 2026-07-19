@@ -1,0 +1,10 @@
+numpy
+scipy
+scikit-learn
+lightgbm
+matplotlib
+pandas
+
+[viz]
+umap-learn
+plotly

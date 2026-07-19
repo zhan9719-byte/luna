@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "luna-ood"
+version = "0.2.0"
+description = "LUNA: classifier-agnostic OOD/novelty detection from embeddings + logits (16 scores, 4 families, trainable combiner)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+  "numpy", "scipy", "scikit-learn", "lightgbm", "matplotlib", "pandas",
+]
+
+[project.optional-dependencies]
+viz = ["umap-learn", "plotly"]
+
+[tool.setuptools.packages.find]
+include = ["luna*"]
