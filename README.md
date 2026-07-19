@@ -64,7 +64,7 @@ luna/
 When benchmarking detection on a known set of outliers, avoid leakage: use a
 stratified k-fold over the outliers so no object is scored by a combiner that saw
 it in training, and calibrate thresholds on a held-out in-distribution split. See
-the [ASTRAnet](https://github.com/<user>/ASTRAnet) pipeline for a complete,
+the [ASTRAnet](https://github.com/applecider-ml/ASTRAnet) pipeline for a complete,
 worked example of this protocol on astronomical spectra (where LUNA serves as the
 anomaly-detection layer of a transient classifier).
 
