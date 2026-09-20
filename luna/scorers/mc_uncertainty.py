@@ -61,7 +61,7 @@ def _entropy(p):
 
 class _MCStatelessScorer(BaseScorer):
     family = "mc_uncertainty"
-    requires = {"probs_t"}
+    requires = {"probs_t", "logits"}
 
     def fit(self, train_data):
         self._fitted = True
